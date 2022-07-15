@@ -6,24 +6,23 @@
 /***********************************************************************************************/
 /***********************************************************************************************/
 
+#ifndef EXTI_Register
+#define EXTI_Register
 
-/**																							   **/
-/** Define The Interrupt Change		-->		FallingEdge or RisingEdge or LowLevel or AnyChange **/
-/**																							   **/
+#define GICR	*((volatile u8*) 0x5B)
+#define GICR_INT1 7
+#define GICR_INT0 6
+#define GICR_INT2 5
 
+#define GIFR	*((volatile u8*) 0x5A)
 
-#ifndef EXTI_Interface
-#define EXTI_Interface
+#define MCUCR	*((volatile u8*) 0x55)
+#define MCUCR_ISC11 3
+#define MCUCR_ISC10 2
+#define MCUCR_ISC01 1
+#define MCUCR_ISC00 0
 
-#define FallingEdge	0
-#define RisingEdge	1
-#define LowLevel	2
-#define AnyChange	3
-
-void EXTI_INT1 (u8 Change);
-
-void EXTI_INT0 (u8 Change);
-
-void EXTI_INT2 (u8 Change);
+#define MCUCSR	*((volatile u8*) 0x54)
+#define MCUCSR_ISC2 6
 
 #endif
