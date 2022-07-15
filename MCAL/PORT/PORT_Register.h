@@ -6,9 +6,17 @@
 /***********************************************************************************************/
 /***********************************************************************************************/
 
-#ifndef PORT_Interface
-#define PORT_Interface
+#ifndef PORT_Register
+#define PORT_Register
 
-void PORT_Initialliztion (void);
+#define DDRA  *((volatile u8*) 0x3a)
+#define DDRB  *((volatile u8*) 0x37)
+#define DDRC  *((volatile u8*) 0x34)
+#define DDRD  *((volatile u8*) 0x31)
+
+#define PORTA *((volatile u8*) 0X3b)
+#define PORTB *((volatile u8*) 0x38)
+#define PORTC *((volatile u8*) 0x35)
+#define PORTD *((volatile u8*) 0x32)
 
 #endif

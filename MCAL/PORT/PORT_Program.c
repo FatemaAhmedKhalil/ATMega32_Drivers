@@ -6,9 +6,23 @@
 /***********************************************************************************************/
 /***********************************************************************************************/
 
-#ifndef PORT_Interface
-#define PORT_Interface
+#include "STD_Types.h"
+#include "BitOperations.h"
 
-void PORT_Initialliztion (void);
+#include "PORT_Config.h"
+#include "PORT_Private.h" 
+#include "PORT_Register.h"
+#include "PORT_Interface.h"
 
-#endif
+void PORT_Initialliztion (void)
+{
+	DDRA = PORTA_Direction;
+	DDRB = PORTB_Direction;
+	DDRC = PORTC_Direction;
+	DDRD = PORTD_Direction;
+	
+	PORTA = PORTA_Value;
+	PORTB = PORTB_Value;
+	PORTC = PORTC_Value;
+	PORTD = PORTD_Value;
+}
