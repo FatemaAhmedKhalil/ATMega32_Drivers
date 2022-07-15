@@ -6,10 +6,10 @@
 /***********************************************************************************************/
 /***********************************************************************************************/
 
-#ifndef GIE_Interface
-#define GIE_Interface
+#ifndef GIE_Register
+#define GIE_Register
 
-void GIE_Enable (void);
-void GIE_Disable (void);
+#define SREG	*((volatile u8*) 0x5F)
+#define SREG_I	7
 
 #endif

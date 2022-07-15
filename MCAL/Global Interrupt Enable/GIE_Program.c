@@ -6,10 +6,18 @@
 /***********************************************************************************************/
 /***********************************************************************************************/
 
-#ifndef GIE_Interface
-#define GIE_Interface
+#include "STD_Types.h"
+#include "BitOperations.h"
 
-void GIE_Enable (void);
-void GIE_Disable (void);
+#include "GIE_Register.h"
+#include "GIE_Interface.h"
 
-#endif
+void GIE_Enable (void)
+{
+	SET_BIT (SREG, SREG_I);
+}
+
+void GIE_Disable (void)
+{
+	CLR_BIT (SREG, SREG_I);
+}
