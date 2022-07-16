@@ -7,10 +7,10 @@
 /***********************************************************************************************/
 
 
-/**																							   **/
-/** Define The Interrupt Change		-->		FallingEdge or RisingEdge or LowLevel or AnyChange **/
-/** Define The Interrupt PIN		-->		INT0 e or INT1 or INT2							   **/
-/**																							   **/
+/**																							                                               **/
+/** Define The Interrupt Change		-->		FallingEdge or RisingEdge or LowLevel or AnyChange     **/
+/** Define The Interrupt PIN		-->		INT0 e or INT1 or INT2			                  				   **/
+/**																							                                               **/
 
 
 #ifndef EXTI_Interface
