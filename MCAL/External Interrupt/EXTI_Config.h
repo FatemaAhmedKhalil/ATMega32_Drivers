@@ -7,10 +7,10 @@
 /***********************************************************************************************/
 
 
-/**																							   **/
+/**																							                                           **/
 /** Define The Interrupt Change		-->		FallingEdge or RisingEdge or LowLevel or AnyChange **/
-/** Define The Interrupt State		-->		Enabled or Disabled								   **/
-/**																							   **/
+/** Define The Interrupt State		-->		Enabled or Disabled			              					   **/
+/**																							                                           **/
 
 
 #ifndef EXTI_Config
