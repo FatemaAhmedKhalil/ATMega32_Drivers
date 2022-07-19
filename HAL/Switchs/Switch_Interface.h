@@ -7,9 +7,9 @@
 /***********************************************************************************************/
 
 
-/**			   														      **/
+/*******************************************************************************************************************************/
 /** Define The Switch Type		-->		PushButton or ToggleButton or DIPSwitch or LimitSwitch or ReedSwitch or RotarySwitch  **/
-/**																	      **/ 
+/*******************************************************************************************************************************/
 
 #ifndef Switch_Interface
 #define Switch_Interface
@@ -24,11 +24,11 @@ struct _Switch_
 
 
 #define PushButton		0
-#define ToggleButton		1
+#define ToggleButton	1
 #define DIPSwitch		2
 #define LimitSwitch		3
 #define ReedSwitch		4
-#define RotarySwitch		5
+#define RotarySwitch	5
 
 u8 PressedButton(SWITCH Switch);
 
