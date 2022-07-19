@@ -15,10 +15,10 @@
 #define PIN_HIGH  1
 #define PIN_LOW   0
 
-#define PORT_A 0
-#define PORT_B 1
-#define PORT_C 2
-#define PORT_D 3
+#define PORT_A 1
+#define PORT_B 2
+#define PORT_C 3
+#define PORT_D 4
 
 #define PIN_0 0
 #define PIN_1 1
