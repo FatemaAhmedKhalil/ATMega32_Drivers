@@ -29,10 +29,10 @@
 #define PIN_6 6
 #define PIN_7 7
 
-u8 DIO_SetPinValue (u8 Port, u8 Pin, u8 Value);
+u8 DIO_SetPinValue (u8 Port, u8 Pin, u8 Value);  // to Set a Value to a Pin by define its Port and Number
 
-u8 DIO_SetPortValue (u8 Port, u8 Value);
+u8 DIO_SetPortValue (u8 Port, u8 Value);	// to Set a Value to a full Port 
 
-u8 DIO_GetPinValue (u8 Port, u8 Pin, u8* Value);
+u8 DIO_GetPinValue (u8 Port, u8 Pin, u8* Value);	// to Get the Value of a certain Pin by define its Port and Number
 
 #endif
