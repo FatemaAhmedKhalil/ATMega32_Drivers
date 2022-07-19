@@ -7,8 +7,8 @@
 /***********************************************************************************************/
 
 /********************************************************************************************/
-/* Define The Direction		-->		INPUT_Direction or OUTPUT_Direction					                      */
-/* Define The Value 		-->		HIGH_Value or LOW_Value								                                  */
+/* Define The Direction		-->		INPUT_Direction or OUTPUT_Direction					    */
+/* Define The Value 		-->		HIGH_Value or LOW_Value								    */
 /********************************************************************************************/
 
 #ifndef PORT_Config
