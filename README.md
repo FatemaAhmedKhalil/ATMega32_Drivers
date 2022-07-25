@@ -1,2 +1,2 @@
 # AVR-Drivers
-Layered Architecture Drivers for AVR Microcontroller.
+Layered Architecture Drivers for ATMega32 Microcontroller.
