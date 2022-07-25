@@ -9,9 +9,6 @@
 #ifndef DIO_Interface
 #define DIO_Interface
 
-#define PIN_OUTPUT 1
-#define PIN_INPUT  0
-
 #define PIN_HIGH  1
 #define PIN_LOW   0
 
