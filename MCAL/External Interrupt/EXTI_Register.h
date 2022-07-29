@@ -22,8 +22,7 @@
 #define MCUCR_ISC01 1		// Interrupt Sense Control 0
 #define MCUCR_ISC00 0		// Interrupt Sense Control 0
 
-#define MCUCSR	*((volatile u8*) 0x54)		// MCU Control and Status
-Register
+#define MCUCSR	*((volatile u8*) 0x54)		// MCU Control and Status Register
 #define MCUCSR_ISC2 6		//  Interrupt Sense Control 2
 
 #endif
