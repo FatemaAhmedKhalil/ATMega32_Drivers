@@ -15,8 +15,6 @@
 #include "CLCD_Private.h"
 #include "CLCD_Config.h"
 
-u8 Counter = 0;  // to Count the Number of Characters in the line 
-
 void CLCD_SendCommand (u8 Command)
 {
 	DIO_SetPinValue (ControlPort, CLCD_RS, PIN_LOW); // Set RS to Low for Command
@@ -39,16 +37,7 @@ void CLCD_SendData (u8 Data)
 	DIO_SetPinValue (ControlPort, CLCD_E, PIN_HIGH);
 	_delay_ms(2);
 	DIO_SetPinValue (ControlPort, CLCD_E, PIN_LOW);
-	
-	Counter++;
-	if (Counter == 16)  // Go to the Second Line
-		CLCD_SetCursor(1,0);
-			
-	if (Counter == 32)  // Go Back to the First Line
-	{
-		CLCD_SetCursor(0,0);
-		Counter = 0;
-	}
+
 }
 
 void CLCD_SendString (const char* String)
